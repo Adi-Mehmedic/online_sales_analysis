@@ -13,3 +13,6 @@ class ProductManager():
     
     def suma_vrijednosti(self):
         return f"${round(sum(item.price for item in self.products),2)}"
+    
+    def remove_product(self,product):
+        self.products.remove(product)
