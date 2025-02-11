@@ -15,6 +15,7 @@ Orange = Product("Orange",1.45,18)
 Adi.add_product(Product("Grapes",2.1,15))
 print(Adi.show_products())
 
+
 #Dodavanje u korpu
 Korpa.add_items(Banana)
 Korpa.add_items(Orange)
@@ -25,4 +26,10 @@ print(Korpa.prikaz_korpe())
 #Promjena kolicina produckta
 Tomato.change_quantity(47)
 print(f"Tomato changed quantity: {Tomato.quantity}")
+
+#Suma cijena
+print(Adi.suma_vrijednosti())
+#Uklanjanje producta
+Adi.remove_product(Orange)
+print(Adi.show_products())
 
