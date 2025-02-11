@@ -1,5 +1,8 @@
 from product_manager import ProductManager
 from product import Product
+from cart import Cart
+#Dodavanje Korpe
+Korpa = Cart()
 #ProductManager
 Adi = ProductManager()
 #Products
@@ -14,3 +17,11 @@ Adi.add_product(Product("Grapes",2.1,15))
 print(Adi.show_products())
 #Suma cijena
 print(Adi.suma_vrijednosti())
+#Dodavanje u korpu
+Korpa.add_items(Banana)
+Korpa.add_items(Orange)
+Korpa.add_items(Potato)
+#Ispis naplate i sadrzaj korpe
+print(Korpa.naplata())
+print(Korpa.prikaz_korpe())
+
